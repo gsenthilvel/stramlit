@@ -1,7 +1,12 @@
 import streamlit as st
 from langchain.llms import OpenAI
 
-st.title('🦜🔗 Quickstart App')
+st.write("a logo and text next to eachother")
+col1, mid, col2 = st.beta_columns([1,1,20])
+with col1:
+    st.image('asset/trimble.png', width=60)
+with col2:
+    st.write('A Name')
 
 openai_api_key = st.sidebar.text_input('OpenAI API Key')
 
