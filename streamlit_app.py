@@ -4,7 +4,7 @@ from langchain.llms import OpenAI
 st.write("a logo and text next to eachother")
 col1, mid, col2 = st.beta_columns([1,1,20])
 with col1:
-    st.image('../asset/trimble.png', width=60)
+    st.write('../asset/trimble.png')
 with col2:
     st.write('A Name')
 
