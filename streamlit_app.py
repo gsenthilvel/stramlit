@@ -1,12 +1,7 @@
 import streamlit as st
 from langchain.llms import OpenAI
 
-st.write("a logo and text next to eachother")
-col1, mid, col2 = st.beta_columns([1,1,20])
-with col1:
-    st.write('../asset/trimble.png')
-with col2:
-    st.write('A Name')
+st.title('🦜🔗 Trimble AI Document')
 
 openai_api_key = st.sidebar.text_input('OpenAI API Key')
 
